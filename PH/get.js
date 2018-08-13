@@ -10,11 +10,13 @@ function createHtmlResponse(valid, Item = {}, orderId) {
     let validResponse = `<div>
     <h1>This is your ticket</h1>
     <h2>${Item.items}</h2>
+    <h3>A day of fun filled activities for all of you who passed out from j'pura, just to take you down memory lane!</h3>
     <h3>LKR ${Item.amount} - ${Item.has_spouse ? "Couple Ticket" : "Single Ticket"}</h3>
     <p>${Item.first_name} ${Item.last_name} ${Item.has_spouse ? 'with ' + Item.spouse_name : ''}</p>
     <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${Item.order_id}"/>
-    <p>${Item.order_id}</p>
+    <p>Order ID : ${Item.order_id}</p>
     <p>Bookmark or print this page. Bring this entire page with you to the event.</p>
+    <a href="http://medical.sjp.ac.lk/index.php/back-to-faculty">Back to Faculty Home Page</a>
 </div>`;
     return `<!DOCTYPE html>
 <html lang="en">
