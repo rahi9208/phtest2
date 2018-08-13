@@ -1,0 +1,11 @@
+{
+  "name": "PH",
+  "version": "1.0.0",
+  "dependencies": {
+    "aws-sdk": "2.176.0",
+    "md5": "2.2.1",
+    "query-string": "6.1.0",
+    "uuidv4": "1.0.1",
+    "mailgun-js": "0.20.0"
+  }
+}
